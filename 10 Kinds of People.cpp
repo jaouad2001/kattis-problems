@@ -46,7 +46,7 @@ int main() {
     vector<vector<int>> zones;
     zones.resize(x, vector<int>(y));
 
-    // Take in map
+   
     for(int i = 0; i < x; i++) {
         for(int j = 0; j < y; j++) {
             char val;
@@ -55,7 +55,7 @@ int main() {
         }
     }
 
-    // Build disjoint set
+    
     vector<int> disjoint;
     disjoint.resize(x * y, -1);
     for(int i = 0; i < x; i++) {
@@ -88,8 +88,6 @@ int main() {
 
         }
     }
-
-    // Run all the queries
     int queries;
     cin >> queries;
     while(queries--) {
